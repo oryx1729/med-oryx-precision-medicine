@@ -1,0 +1,21 @@
+[project]
+name = "primekg-chat"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic-haystack>=2.4.1",
+    "haystack-ai>=2.13.1",
+    "mcp-haystack>=0.2.0",
+    "mcp-neo4j-cypher>=0.2.1",
+    "nest-asyncio>=1.6.0",
+    "py2neo>=2021.2.4",
+    "streamlit>=1.45.0",
+    "streamlit-agraph>=0.0.45",
+    "tqdm>=4.67.1",
+]
+
+
+[tool.uv.sources]
+mcp-haystack = { git = "https://github.com/deepset-ai/haystack-core-integrations.git", subdirectory = "integrations/mcp", rev = "main" }
